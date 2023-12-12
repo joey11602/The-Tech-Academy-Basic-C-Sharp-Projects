@@ -23,7 +23,7 @@ namespace DailyReportAssignment
             Console.WriteLine("What page number are you on?"); // this line writes to the console
             int pageNumber; // this line declares a int variable
             while (!int.TryParse(Console.ReadLine(), out pageNumber)) // this while loop continues as long as the result is true. by using the 'not' logic
-            // the parsing must succeed to get a false result and move past it. Until then, the user is propted to enter a valid number.
+            // the parsing must succeed to get a false result and move past it. Until then, the user is prompted to enter a valid number.
             {
                 Console.WriteLine("Invalid input. Please enter a valid number for the page.");
             }
@@ -31,7 +31,7 @@ namespace DailyReportAssignment
             Console.WriteLine("Do you need help with anything? Please answer \"true\" or \"false.\""); // this line writes to the console
             bool parsedNeedHelp; // this line declares a boolean variable
             while (!bool.TryParse(Console.ReadLine(), out parsedNeedHelp)) // this while loop continues as long as the result is true. by using the 'not' logic
-            // the parsing must succeed to get a false result and move past it. Until then, the user is propted to enter true or false.
+            // the parsing must succeed to get a false result and move past it. Until then, the user is prompted to enter true or false.
             {
                 Console.WriteLine("Invalid input. Please enter \"true\" or \"false.\"");
             }
@@ -45,7 +45,7 @@ namespace DailyReportAssignment
             Console.WriteLine("How many hours did you study today?"); // this line writes to the console
             int numberOfHours; // this line declares a int variable
             while (!int.TryParse(Console.ReadLine(), out numberOfHours)) // this while loop continues as long as the result is true. by using the 'not' logic
-            // the parsing must succeed to get a false result and move past it. Until then, the user is propted to enter a valid number.
+            // the parsing must succeed to get a false result and move past it. Until then, the user is prompted to enter a valid number.
             {
                 Console.WriteLine("Invalid input. Please enter a valid number for the hours.");
             }
