@@ -23,22 +23,12 @@ namespace BooleanLogicSubmission
                                                                                                //the begining of the while loop
             }
             Console.WriteLine(); //line break
-            Console.WriteLine("Have you ever had a DUI?"); //write instructions to console
-            char dui; //define variable for Y/N
-            while (true) // this while loop will repeat until the user inputs the proper entry of Y/N
+            Console.WriteLine("Have you ever had a DUI ?  Please answer \"true\" or \"false.\""); // this line writes to the console
+            bool dui; // this line declares a boolean variable
+            while (!bool.TryParse(Console.ReadLine(), out dui)) // this while loop continues as long as the result is true. by using the 'not' logic
+            // the parsing must succeed to get a false result and move past it. Until then, the user is prompted to enter true or false.
             {
-                Console.WriteLine("ENTER YOUR ANSWER (Y/N)"); //write instructions to console
-                string userInput = Console.ReadLine(); //reads users entry and saves it as a string variable
-                if (userInput.Length == 1) //ensures that the input is a single character
-                {
-                    char inputChar = char.ToUpper(userInput[0]); //changes the input to an uppercase
-                    if (inputChar == 'Y' || inputChar == 'N') //checks if input is Y/N
-                    {
-                        dui = inputChar; //assigns the inputChar to userAnswer out side of the code block for later use
-                        break; //exit the loop
-                    }
-                }
-                Console.WriteLine("Invalid input. Please enter 'Y' or 'N'."); //writes an error to the console and returns user to the begining of the while loop
+                Console.WriteLine("Invalid input. Please enter \"true\" or \"false.\"");
             }
             Console.WriteLine(); //line break
             Console.WriteLine("How many speeding tickets do you have? (This must be a numerical entry. Enter 0 for none.)"); //write instructions to console
@@ -51,7 +41,7 @@ namespace BooleanLogicSubmission
                                                                                                                      //user to the begining of the while loop
             }
             Console.WriteLine(); //line break
-            bool qualify = (age > 15 && dui == 'N' && tickets == 0); //boolean equation to determine if the applicant qualifies
+            bool qualify = (age > 15 && dui == false && tickets < 4); //boolean equation to determine if the applicant qualifies
             Console.WriteLine("Qualified?"); //write to console
             Console.WriteLine(qualify); //write variable qualify to console
             Console.ReadLine(); //keep console open
