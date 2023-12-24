@@ -11,7 +11,7 @@ namespace VoidMethod
         static void Main()
         {            
             MathOperation mathOperation = new MathOperation(); //instantiate the MathOperation class
-                                                               //
+                                                               
             mathOperation.PerformOperation(3, 5); //call the PerformOperation method and pass in two parameters
 
             mathOperation.PerformOperation(firstNumber: 7, secondNumber: 10); //call the PerformOperation method and pass in two parameters by name
