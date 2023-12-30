@@ -15,8 +15,8 @@ namespace TwentyOne
             //game.ListPlayer();
             //game.Play();
             //Console.ReadLine();
-
             //Console.ReadLine();
+
             Deck deck = new Deck();
             deck.Shuffle(3);
 
