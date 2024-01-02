@@ -19,7 +19,7 @@ namespace DateTimeSubmission
                                                                                 //assign it to hoursAddeddateTime
             Console.WriteLine($"The DateTime is: {hoursAddeddateTime} after adding {userNumber} hours to it.");
             //write to the console the date and time with the users number in hours added to it
-            Console.ReadLine(); //hole console open
+            Console.ReadLine(); //hold console open
         }
     }
 }
