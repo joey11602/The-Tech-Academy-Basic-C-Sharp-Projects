@@ -19,7 +19,7 @@ namespace OperatorsSubmissionAssignment
 
         public static bool operator !=(Employee employee1, Employee employee2) //overload the not equal operator
         {
-            return !(employee1 == employee2); //custom inequality comparison for Id
+            return employee1.Id != employee2.Id; //custom inequality comparison for Id
         }
     }
 }
