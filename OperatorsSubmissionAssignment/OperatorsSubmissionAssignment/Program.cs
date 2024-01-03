@@ -12,7 +12,7 @@ namespace OperatorsSubmissionAssignment
         {
             Employee employee1 = new Employee { Id = 0, FirstName = "John", LastName = "Doe" }; //instantiate an Employee object
             Employee employee2 = new Employee { Id = 1, FirstName = "Joe", LastName = "Jackson" }; //instantiate another Employee object
-            bool areEqual = employee1.Id == employee2.Id; //compare object IDs with overloaded operator ==
+            bool areEqual = employee1 == employee2; //compare objects with overloaded operator ==
             Console.WriteLine($"Are the employee IDs equal? {areEqual}"); //write the result to the console
             Console.ReadLine(); //hold the console open
         }
