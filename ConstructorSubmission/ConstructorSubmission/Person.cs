@@ -4,7 +4,8 @@ namespace ConstructorSubmission
     //create the class Person
     public class Person
     {
-        //constructor with the FirstName parameter that chains to the second constructor by providing the default Age value
+        //constructor with the firstName parameter that chains to the
+        //second constructor by providing the default age value
         public Person(string firstName) : this(firstName, 21)
         {
         }
